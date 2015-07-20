@@ -36,7 +36,10 @@ Patches are welcome; please include tests!
 
 ## Installation
 
-Add `urlcrypt` to your Gemfile.
+Add to your Gemfile:
+```ruby
+gem 'urlcrypt', '~> 0.1.1', require: 'URLcrypt'
+```
 
 ## Example
 
