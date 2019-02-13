@@ -72,7 +72,7 @@ module URLcrypt
     def self.cipher(mode)
       cipher = OpenSSL::Cipher.new('aes-256-cbc')
       cipher.send(mode)
-      cipher.key = @key
+      cipher.key = @key[0..31]
       cipher
     end
 
